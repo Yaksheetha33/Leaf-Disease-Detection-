@@ -1,26 +1,39 @@
 # Leaf-Disease-Detection-
-Explainable Multimodal Deep Learning System for Animal Emotion Recognition
-A cutting-edge AI framework that combines audio, visual, and biometric data to recognize and explain animal emotions in real-time. Built with transformer-based models, multimodal fusion, and explainable AI (XAI) powered by GPT-4.
 
-Overview
+**Explainable Multimodal Deep Learning System for Leaf Disease Detection**
 
-Animal emotion recognition is a growing field with applications in veterinary medicine, animal welfare, and human-animal interaction.
-Traditional unimodal approaches (only audio or only images) often fail in noisy, dynamic environments.
+A cutting‑edge AI framework that combines visual, spectral, and environmental data to recognize and explain plant leaf diseases in real time.
+Built with transformer‑based models, multimodal fusion, and Explainable AI (XAI) powered by GPT‑4.
+
+
+**Overview**
+
+Leaf disease detection is a growing field with applications in precision agriculture, crop protection, and smart farming.
+Traditional unimodal approaches (only images or only sensor data) often fail in noisy, dynamic environments.
+
 This project introduces a multimodal deep learning system that integrates:
 
-Audio (animal vocalizations) → Wav2Vec2 Transformer
-Images (faces & body cues) → Vision Transformer (OpenCLIP ViT-B/32)
-Biometrics (heart rate, temperature, variability) → Normalized numerical features
-All modalities are fused using LSTM + Dense layers, producing robust emotion classification across 7 categories:
-Happy, Sad, Angry, Fearful, Relaxed, Curious, Neutral
+  Images (leaf RGB photos) → Vision Transformer (ViT‑B/32)
 
-To ensure transparency, predictions are explained in natural language using GPT-4.
+  Spectral Data (infrared/hyperspectral cues) → CNN‑based spectral encoder
 
-Key Features
-Multimodal Fusion: Audio + Image + Biometric integration
-Transformer-based Feature Extraction: Wav2Vec2 & Vision Transformer
-Interactive Visualization: Real-time emotion distribution via Chart.js pie charts
-Explainable AI (XAI): GPT-4 generates human-readable explanations for predictions
-Real-time Inference: Lightweight Flask REST API backend
-Species Adaptability: Extendable to new animals, sensors, or contexts
-Overall Architecture
+  Environmental Biometrics (temperature, humidity, soil moisture) → Normalized numerical features
+
+All modalities are fused using LSTM + Dense layers, producing robust disease classification across 7 categories:
+Healthy, Bacterial Spot, Early Blight, Late Blight, Leaf Mold, Septoria Leaf Spot, Mosaic Virus
+
+To ensure transparency, predictions are explained in natural language using GPT‑4.
+
+ **Key Features**
+ 
+Multimodal Fusion: Image + Spectral + Environmental integration
+
+Transformer‑based Feature Extraction: Vision Transformer for leaf images
+
+Interactive Visualization: Real‑time disease distribution via Chart.js pie charts
+
+Explainable AI (XAI): GPT‑4 generates human‑readable explanations for predictions
+
+Real‑time Inference: Lightweight Flask REST API backend
+
+Crop Adaptability: Extendable to new plant species, sensors, or contexts
