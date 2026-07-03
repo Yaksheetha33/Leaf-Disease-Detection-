@@ -1,8 +1,9 @@
 # Leaf-Disease-Detection-
-xplainable Multimodal Deep Learning System for Animal Emotion Recognition
+Explainable Multimodal Deep Learning System for Animal Emotion Recognition
 A cutting-edge AI framework that combines audio, visual, and biometric data to recognize and explain animal emotions in real-time. Built with transformer-based models, multimodal fusion, and explainable AI (XAI) powered by GPT-4.
 
 Overview
+
 Animal emotion recognition is a growing field with applications in veterinary medicine, animal welfare, and human-animal interaction.
 Traditional unimodal approaches (only audio or only images) often fail in noisy, dynamic environments.
 This project introduces a multimodal deep learning system that integrates:
